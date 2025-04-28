@@ -19,3 +19,5 @@ class BinarySearch:
             else:
                 end = middle - 1
         return -1
+    
+    
