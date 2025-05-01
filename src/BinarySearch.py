@@ -1,8 +1,14 @@
+# Made by Doctor Solo
+#
+# This project can binary search in a list
+
+
 class BinarySearch:
     def __init__(self, arr: list[int]):
         self.arr = list(arr)
     
     
+    # Serch an element in an ordered list
     def Search(self, search: int) -> int:
         start = 0
         end = len(self.arr) - 1
@@ -19,6 +25,7 @@ class BinarySearch:
         return -1
     
     
+    # Add an element to the list
     def Add(self, number:int) -> None:
         
         self.arr.append(-1)
@@ -40,6 +47,7 @@ class BinarySearch:
         return SystemError("something went wrong")
     
     
+    # Remove an element to the list
     def Delete(self, number:int) -> None:
         arr_lenght = len(self.arr) - 1
         
@@ -55,6 +63,7 @@ class BinarySearch:
         self.arr.pop()
     
     
+    # print the list in terminal
     def Show(self) -> None:
         for i in range(len(self.arr)):
             print(f"{i} --------> {self.arr[i]}")
