@@ -31,7 +31,7 @@ class Stack:
     
     def Pop(self) -> None:
         if self.__isEmpity():
-            print("Stack is enpity, you can't push here")
+            print("The stack is enpty, you can't delete anything here")
         else:
             self.__top -= 1
     
